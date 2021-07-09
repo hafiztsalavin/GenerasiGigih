@@ -19,7 +19,7 @@ class Person
     def hit(damage)
         chance = rand(10)
         if chance <= 8
-            puts "Jin Sakai deflect khotun attack"
+            puts "#{@name} deflect attack"
 		    puts "\n"
         else
             @hit_points -= damage
