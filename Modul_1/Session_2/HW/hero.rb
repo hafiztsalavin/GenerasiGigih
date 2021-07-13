@@ -7,10 +7,14 @@ class Hero < Person
     end
 
     def take_damage(damage)
-        if rand < @deflect_percentage
-            puts "#{@name} deflects the attack."
-        else
-            @hit_points -= damage
+        super(damage)
+        if @hitpoint > 0 && @hitpoint < 50 
+            flee if rand < @flee_percentage 
         end
+    end
+
+    def heal(other_person)
+        other_person.get_heal(@heal_point)
+        puts "#{@name} heals #{other_person.name}, restoring #{@heal_point} hitpoints"
     end
 end

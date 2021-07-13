@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <form action="/items" method="post">
+        <input type="text" placeholder="name" name="name">
+        <input type="number" placeholder="price" name="price">
+        <input type="submit" value="submit">
+    </form>
+    <div>
+        <% items.each do |item| %>
+        <div>
+            <%= item[:name] %> - Rp<%= item[:price]%>
+        </div>
+        <% end %>
+    </div>
+</html>
