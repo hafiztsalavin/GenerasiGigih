@@ -1,0 +1,11 @@
+
+items data
+but the client also needs to record customer orders
+they want the customer name and phone (unique) to be recorded along with their puchases
+so when they make an order, we can see who make the order, how much is total price paid for one order, and the order date.
+the also want to order details recorded, which items are bought in one order and how many (quantity of each item bought)
+
+1. define the additional entities and design the entity relationship diagram
+2. create tables that represent the entities
+3. insert minimal 5 dummy records for each entity
+4. display data which contains all orders information, with their respective customer name and phone informations.
