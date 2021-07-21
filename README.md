@@ -1,3 +1,3 @@
-# GenerasiGigih
-Back End Patah
+# GenerasiGigih by YABB and Gojek
+Back End Path
 GBE01099

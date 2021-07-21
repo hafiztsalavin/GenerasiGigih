@@ -1,0 +1,22 @@
+algoritma router
+- eksekusi pertama di web rb (get = menampilkan data, post = update/edit , delete ya hapus)
+- minta data dari db
+- pada url (ini misal /items) data nya dapet dari db.connection
+
+menampilkan data
+- menampilkan views dari erb (html nya)
+- minta data dari db baru lempar ke router lalu ke view
+- locals untuk data return dari db.connection (minta data nya di db.connection baru lempar ke erb)
+- data di render di erb
+
+update data
+- action = fungsi url untuk  lempar data dari erb ke router(web.rb) menggunakan params
+- method untuk method http nya kalo update bisa pake post karena ngirim
+- baru eksekusi di db nya
+- return
+
+delete data
+untuk delete menggunakan form tidak support put, patch atau delete. maka pakai value="_method"
+https://github.com/expressjs/method-override
+
+
