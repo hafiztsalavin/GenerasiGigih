@@ -1,0 +1,13 @@
+<h1>Edit <h1>
+<% items.each do |item|%>
+<form action="/items/<%= item.id %>" method="POST">
+  <input type="text" id="name" name="name" value="<%= item.name %>">
+  <input type="text" id="price" name="price" value="<%= item.price %>">
+<% end %>
+    <select id="category" name="category">
+        <% categories.each do |category|%>
+            <option value=<%= category.id %>> <%= category.name %></option>
+        <% end %>
+    </select>
+<button type="submit">Update Item</button>
+</form> 
