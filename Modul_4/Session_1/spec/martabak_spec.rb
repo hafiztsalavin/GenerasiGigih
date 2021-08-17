@@ -12,14 +12,4 @@ RSpec.describe Martabak do
         # then / ekspektasi
         expect(taste).to eq("martabak cokelat is delicious")
     end
-
-    it 'is delicious' do
-        martabak = Martabak.new('keju')
-        
-        # when / saat jalan
-        taste = martabak.taste
-
-        # then / ekspektasi
-        expect(taste).to eq("martabak keju is delicious")
-    end
 end

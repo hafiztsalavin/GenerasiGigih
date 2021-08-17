@@ -1,4 +1,5 @@
 require 'mysql2'
+require_relative '../env.rb'
 
 def create_db_client
     client = Mysql2::Client.new(

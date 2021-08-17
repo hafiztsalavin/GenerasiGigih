@@ -1,5 +1,5 @@
 require_relative '../db/db_connector'
-
+require_relative '../model/category'
 class Item
     attr_reader :id, :name, :price, :category
 
@@ -8,6 +8,12 @@ class Item
         @name = name
         @price = price
         @category = category
+    end
+
+    def valid?
+        return false if @name.nil?
+        return false if @price.nil?
+        true
     end
 
     def self.get_all_items
@@ -65,11 +71,5 @@ class Item
         ")
     
         delete
-    end
-
-    def valid?
-        return false if @name.nil?
-        return false if @price.nil?
-        true
     end
 end

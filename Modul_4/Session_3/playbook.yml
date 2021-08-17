@@ -1,0 +1,6 @@
+- name: Run server
+  hosts: server01
+  tasks:
+  - name: starting sinatra
+    become: true
+    command: sudo systemctl start sinatra.service

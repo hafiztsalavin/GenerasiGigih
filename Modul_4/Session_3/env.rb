@@ -1,0 +1,3 @@
+DB_USERNAME=root
+DB_NAME=food_oms_db
+DB_PASSWORD=Tsalavin98
